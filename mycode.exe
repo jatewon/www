@@ -1,0 +1,24 @@
+
+; You may customize this and other start-up templates; 
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+
+jmp start
+A: dw 1000;
+B: dw 10;
+C: dw 1Fh;
+D: dw  30h;
+E: dw 300Ah;
+KQUA: dw  0Dh,0Ah,24h
+start:mov AX,KQUA
+      mov AX,A
+      add AX,B
+      sub AX,C
+      add AX,D
+      add AX,E
+
+ret
+
+
+
+
